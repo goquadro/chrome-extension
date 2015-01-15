@@ -1,0 +1,22 @@
+{
+  "manifest_version": 2,
+
+  "name": "GoQuadro url submitter",
+  "description": "This extension pushes an url to GoQuadro.",
+  "version": "0.2.7",
+
+  "permissions": [
+    "activeTab",
+    "storage",
+    "https://api.goquadro.com/"
+  ],
+  "background": {
+    "scripts": ["jquery-2.1.1.min.js", "background.js"],
+    "persistent": false
+  },
+  "browser_action": {
+    "default_icon": "icon.png",
+    "default_title": "Push qdoc"
+  },
+  "homepage_url": "https://www.goquadro.com"
+}
